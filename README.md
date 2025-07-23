@@ -1,38 +1,8 @@
-# sv
+Inside this there is a component that displays a list of logos. 
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+I'd like you to create a smooth, horizontally-scrolling carousel. Here are the steps:
+1. Create the Animation: Make the row of items scroll horizontally from right to left. The movement should be continuous and smooth.
+2. Make it Loop: When an item scrolls completely out of view on the left, it should reappear on the right to create an infinite loop effect.
+3. Use Your Preferred Tool: You can achieve this using pure CSS animations or by using Svelte's built-in animation and motion libraries (svelte/animate, svelte/motion). Please choose the method you are most comfortable with and be prepared to explain why you chose it.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+The goal isn't to build a perfect, production-ready component, but for me to see how you approach the problem, write code, and use tools like Svelte and Tailwind. Don't worry about getting it finished, your thought process is the most important part.
