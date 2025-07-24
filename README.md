@@ -1,8 +1,3 @@
-Inside this there is a component that displays a list of logos. 
+Thought Process
 
-I'd like you to create a smooth, horizontally-scrolling carousel. Here are the steps:
-1. Create the Animation: Make the row of items scroll horizontally from right to left. The movement should be continuous and smooth.
-2. Make it Loop: When an item scrolls completely out of view on the left, it should reappear on the right to create an infinite loop effect.
-3. Use Your Preferred Tool: You can achieve this using pure CSS animations or by using Svelte's built-in animation and motion libraries (svelte/animate, svelte/motion). Please choose the method you are most comfortable with and be prepared to explain why you chose it.
-
-The goal isn't to build a perfect, production-ready component, but for me to see how you approach the problem, write code, and use tools like Svelte and Tailwind. Don't worry about getting it finished, your thought process is the most important part.
+I wanted to make a simple sliding carousel that moves items from right to left. To do this, I used a timer that updates a number called offset every few milliseconds. This number tells how much the items should slide. Once the first item is fully out of view, I move it to the end of the list and reset the sliding to start again. I had to get the width of the first item after everything was on the screen, so I waited for the page to finish loading before measuring it. At first, the items weren’t moving, and I realized it was because I didn’t write the style in a way that would update automatically (dynamic tailwind issue.). After fixing that, the items started sliding smoothly, one after the other.
